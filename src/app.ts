@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import routes from './routes'
+import constants from './utils/Constants'
 
 class App {
   public express: express.Application
@@ -28,7 +29,7 @@ class App {
   }
 
   private database (): void {
-    mongoose.connect(`mongodb+srv://arfelli:Zf05byo1myJfl8Uw@prod.fukgg5i.mongodb.net/facefJobs?retryWrites=true`, 
+    mongoose.connect(`mongodb+srv://arfelli:${constants.BANCO_DADOS_PASS}@prod.fukgg5i.mongodb.net/facefJobs?retryWrites=true`, 
     { 
       useNewUrlParser: true,
       useUnifiedTopology: true,
