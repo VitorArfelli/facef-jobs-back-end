@@ -1,0 +1,76 @@
+// Estrutura da Vaga -> OK
+{
+  "_id": "",
+  "cnpj":"",
+  "cargo": "Analista de suporte agrícola",
+  "descricao": "Realizar atendimento ao clientepara identificação de suas necessidades e planejamento das ações corretivas. Treinar e capacitar os usuários do sistema.",
+  "requisitosDaFunção": "Experiência na área AgrícolaUsinas",
+  "diferenciais": [
+    // combo
+  ],
+  "salario": "R$ 1.850,00",
+  "evolucao": "3 meses = 1.850,00, 12 meses = 2.775,00, Fixo = 4.162,50", // descrição
+  "missao": "", // descrição ou dentro do proprios dados da empresa
+  "visao": "", // descrição ou dentro do proprios dados da empresa
+  "valores": "", // descrição ou dentro do proprios dados da empresa
+  "psi": "",
+  "dataDaPublicacao": "",
+  "dataDeCriacao": "",
+  "dataDeAceitacao": "", 
+  "dataDeEncerramento": "",
+  "status": "",
+},
+
+
+{"Noções de mapas de propriedades/talhões"},
+{"Contratos agrícolas"},
+{"Noções básicas de operações agrícolas"},
+{"Custo Agrícola"},
+{"Laboratório"},
+{"Excel"},
+{"Conhecimento em Sistemas ERP "},
+{"Graduado ou cursando áreas do agronegócio."},
+{"Disponibilidade p/ viagens."}
+
+
+// Estrutura da empresa -> OK
+{
+ "_id": "",
+  "cnpj": "",
+  "email": "",
+  "nome":"",
+  "senha":"",
+}
+
+// Estrutura de candidato -> OK
+{
+  "_id": "",
+  "email": "",
+  "candidaturas": [
+    {
+      "idVaga":"",
+      "cnpj":"",
+      "questoes":{
+        "tipoDado": ["boolean", "string", ...],
+        "questao":"",
+        "descricao": "",
+        "resposta":"",
+      }
+    }
+  ]
+}
+
+// Estrutura dos testes / seção -> OK
+{
+  "_id": "",
+  "cnpj": "",
+  "titulo": "", 
+  "descricao": "",
+  "questoes": [
+    {
+      "tipoDado": ["boolean", "string", ...],
+      "questao":"",
+      "descricao": ""
+    }
+  ]
+}
