@@ -34,8 +34,8 @@ class UserCandidateController {
 
   public async insertUserCandidate (req: Request, res: Response): Promise<Response> {
     try {
-      if(req.body.email && req.body.senha) {
-        const result = await UserCandidate.create(req.body())
+      if(req.body.email) {
+        const result = await UserCandidate.create(req.body)
         return res.status(200).json(result)
       }
       return res.status(400).json({
@@ -56,7 +56,7 @@ class UserCandidateController {
           { 
             _id: req.params.id 
           }, 
-          req.body(), 
+          req.body, 
           null, 
           (err, result) => {
             console.log(result)

@@ -35,7 +35,7 @@ class DifferentialController {
   public async insertDifferential (req: Request, res: Response): Promise<Response> {
     try {
       if(req.body.email && req.body.senha) {
-        const result = await Differential.create(req.body())
+        const result = await Differential.create(req.body)
         return res.status(200).json(result)
       }
       return res.status(400).json({
@@ -56,7 +56,7 @@ class DifferentialController {
           { 
             _id: req.params.id 
           }, 
-          req.body(), 
+          req.body, 
           null, 
           (err, result) => {
             console.log(result)
