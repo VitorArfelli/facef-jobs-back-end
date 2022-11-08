@@ -2,10 +2,6 @@ import { Schema, Model, model } from 'mongoose'
 import { DifferentialModel } from '../models/DifferentialModel';
 
 const DifferentialSchema = new Schema({
-  _id: {
-    type: String,
-    require: false,
-  },
   descricao: {
     type: String,
     require: false

@@ -28,7 +28,7 @@ class App {
   }
 
   private database (): void {
-    mongoose.connect(`mongodb://localhost:27017/???`, 
+    mongoose.connect(`mongodb+srv://arfelli:Zf05byo1myJfl8Uw@prod.fukgg5i.mongodb.net/facefJobs?retryWrites=true`, 
     { 
       useNewUrlParser: true,
       useUnifiedTopology: true,

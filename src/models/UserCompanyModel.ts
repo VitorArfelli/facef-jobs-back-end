@@ -1,7 +1,6 @@
 import { ObjectId } from "mongodb";
 
 export interface UserCompanyModel {
-  _id: ObjectId,
   cnpj: string,
   email: string,
   nome: string,

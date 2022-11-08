@@ -2,10 +2,6 @@ import { Schema, Model, model } from 'mongoose'
 import { QuestionModel } from '../models/QuestionModel';
 
 const QuestionSchema = new Schema({
-  _id: {
-    type: String,
-    require: false,
-  },
   cnpj: {
     type: String,
     require: false

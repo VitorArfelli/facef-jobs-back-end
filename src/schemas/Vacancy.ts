@@ -4,7 +4,6 @@ import { Schema, Model, model } from 'mongoose'
 import { VacancyModel } from '../models/VacancyModel'
 
 const VacancySchema = new Schema({
-    _id: ObjectId,
     cnpj: {
         type: String,
         require: false

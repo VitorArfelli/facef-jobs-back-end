@@ -2,10 +2,6 @@ import { Schema, Model, model } from 'mongoose'
 import { UserCompanyModel } from '../models/UserCompanyModel'
 
 const UserCompanySchema = new Schema({
-  _id: {
-    type: String,
-    require: false,
-  },
   cnpj: {
     type: String,
     require: false
